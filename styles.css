@@ -1,0 +1,696 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2563eb 100%);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #fbbf24;
+    transform: translateY(-2px);
+}
+
+nav a.active {
+    background-color: #fbbf24;
+    color: #1e3c72;
+}
+
+/* Banner Styles */
+.banner {
+    background: linear-gradient(rgba(30, 60, 114, 0.7), rgba(37, 99, 235, 0.7)), 
+                url('images/banner.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    margin-bottom: 40px;
+}
+
+.banner-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.banner-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.page-banner {
+    background: linear-gradient(135deg, #1e3c72 0%, #2563eb 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 40px;
+}
+
+.page-banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.page-banner p {
+    font-size: 1.2rem;
+}
+
+/* Button Styles */
+.btn-primary {
+    display: inline-block;
+    background-color: #fbbf24;
+    color: #1e3c72;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #f59e0b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #1e40af;
+    transform: translateY(-2px);
+}
+
+/* Introduction Section */
+.intro {
+    padding: 60px 0;
+    text-align: center;
+    background-color: white;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Featured Products Section */
+.featured {
+    padding: 60px 0;
+    background-color: #f9fafb;
+}
+
+.featured h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 50px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    color: #1e3c72;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-card .price {
+    display: block;
+    font-size: 1.3rem;
+    color: #fbbf24;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* About Page Styles */
+.about-content {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.about-section {
+    margin-bottom: 50px;
+}
+
+.about-section h2 {
+    color: #1e3c72;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.mission-vision {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.mv-card {
+    background: linear-gradient(135deg, #1e3c72 0%, #2563eb 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.mv-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #fbbf24;
+}
+
+.mv-card p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: white;
+}
+
+/* Team Section */
+.team-section {
+    margin: 60px 0;
+}
+
+.team-section h2 {
+    color: #1e3c72;
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.team-member {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #fbbf24;
+}
+
+.team-member h3 {
+    color: #1e3c72;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.team-member .role {
+    color: #fbbf24;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.team-member .bio {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Why Choose Us */
+.why-choose {
+    margin: 60px 0;
+}
+
+.why-choose h2 {
+    color: #1e3c72;
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.benefit-item {
+    background: #f0f9ff;
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 4px solid #2563eb;
+}
+
+.benefit-item h4 {
+    color: #1e3c72;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.benefit-item p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Products Page Styles */
+.products-section {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.products-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.product-detail {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    background: #f9fafb;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-info h3 {
+    color: #1e3c72;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #fbbf24;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.product-brief {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.product-details-full {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid #2563eb;
+}
+
+.product-details-full h4 {
+    color: #1e3c72;
+    font-size: 1.3rem;
+    margin: 20px 0 10px 0;
+}
+
+.product-details-full ul {
+    margin-left: 20px;
+    color: #555;
+}
+
+.product-details-full li {
+    margin-bottom: 8px;
+}
+
+.toggle-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #1e40af;
+}
+
+.product-additional-info {
+    margin-top: 50px;
+    padding: 30px;
+    background: #eff6ff;
+    border-radius: 10px;
+    border-left: 4px solid #fbbf24;
+}
+
+.product-additional-info h3 {
+    color: #1e3c72;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.product-additional-info p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+/* Contact Page Styles */
+.contact-section {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+}
+
+.contact-info h3 {
+    color: #1e3c72;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    color: #555;
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-item h4 {
+    color: #1e3c72;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.contact-item p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Contact Form Styles */
+.contact-form-container {
+    background: #f9fafb;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contact-form-container h3 {
+    color: #1e3c72;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    color: #1e3c72;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.error-message {
+    color: #dc2626;
+    font-size: 0.85rem;
+    display: block;
+    margin-top: 5px;
+}
+
+.form-group input.error,
+.form-group textarea.error {
+    border-color: #dc2626;
+}
+
+#form-message {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+#form-message.success {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #10b981;
+    display: block;
+}
+
+#form-message.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #dc2626;
+    display: block;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #1e3c72 0%, #2563eb 100%);
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-section h3 {
+    color: #fbbf24;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul a:hover {
+    color: #fbbf24;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .banner-content h2 {
+        font-size: 2rem;
+    }
+
+    .product-detail {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid,
+    .team-grid,
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
