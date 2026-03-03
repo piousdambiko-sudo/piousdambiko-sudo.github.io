@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Poultry Paradise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Poultry Paradise Logo" class="logo-img">
+                <h1>Poultry Paradise</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h2>Our Premium Products</h2>
+            <p>Quality chickens for every need</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-list">
+                
+                <!-- Product 1: Broiler Chickens -->
+                <div class="product-detail">
+                    <div class="product-image">
+                        <img src="images/broiler.jpg" alt="Broiler Chickens">
+                    </div>
+                    <div class="product-info">
+                        <h3>Broiler Chickens</h3>
+                        <p class="product-price">$8.50 per kg</p>
+                        <p class="product-brief">Premium quality meat chickens, raised for optimal flavor and tenderness. Perfect for roasting, grilling, and all your culinary needs.</p>
+                        
+                        <div class="product-details-short">
+                            <button class="toggle-btn" onclick="toggleDetails('product1')">Show More Details</button>
+                        </div>
+                        
+                        <div class="product-details-full" id="product1" style="display: none;">
+                            <h4>Full Description</h4>
+                            <p>Our broiler chickens are specially bred and raised for meat production. They are fed a balanced diet of high-quality grains and supplements to ensure healthy growth and superior meat quality. These chickens reach market weight in 6-8 weeks and are processed in our certified facility.</p>
+                            
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Average weight: 1.8 - 2.5 kg per bird</li>
+                                <li>Raised in spacious, ventilated coops</li>
+                                <li>Fed with antibiotic-free, nutritious feed</li>
+                                <li>Processed and packaged in hygienic conditions</li>
+                                <li>Available fresh or frozen</li>
+                            </ul>
+                            
+                            <h4>Ideal For:</h4>
+                            <p>Restaurants, hotels, catering services, retail butcheries, and families looking for quality meat for home cooking.</p>
+                            
+                            <h4>Minimum Order:</h4>
+                            <p>10 kg for delivery. Walk-in customers can purchase any quantity.</p>
+                            
+                            <button class="toggle-btn" onclick="toggleDetails('product1')">Show Less</button>
+                        </div>
+                        
+                        <a href="contact.html" class="btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Layer Chickens -->
+                <div class="product-detail">
+                    <div class="product-image">
+                        <img src="images/layer.jpg" alt="Layer Chickens">
+                    </div>
+                    <div class="product-info">
+                        <h3>Layer Chickens</h3>
+                        <p class="product-price">$15.00 per bird</p>
+                        <p class="product-brief">High-quality egg-laying chickens for consistent production. Ideal for commercial egg farming or personal use.</p>
+                        
+                        <div class="product-details-short">
+                            <button class="toggle-btn" onclick="toggleDetails('product2')">Show More Details</button>
+                        </div>
+                        
+                        <div class="product-details-full" id="product2" style="display: none;">
+                            <h4>Full Description</h4>
+                            <p>Our layer chickens are specifically selected for their excellent egg-laying capabilities. These birds are healthy, vaccinated, and ready to start producing eggs. They come from proven bloodlines known for consistent egg production and disease resistance.</p>
+                            
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Peak production: 280-320 eggs per year</li>
+                                <li>Age: 18-20 weeks (point-of-lay)</li>
+                                <li>Fully vaccinated against common poultry diseases</li>
+                                <li>Hardy breeds suitable for Zimbabwe's climate</li>
+                                <li>Available breeds: Rhode Island Red, Leghorn, and hybrid layers</li>
+                            </ul>
+                            
+                            <h4>Production Details:</h4>
+                            <p>Layers begin producing eggs at around 18-22 weeks and maintain peak production for 12-18 months. With proper care, they can continue laying for up to 3 years.</p>
+                            
+                            <h4>Ideal For:</h4>
+                            <p>Commercial egg farms, small-scale farmers, schools, and individuals wanting fresh eggs daily.</p>
+                            
+                            <h4>Minimum Order:</h4>
+                            <p>10 birds for delivery. We also offer ongoing supply contracts for commercial farms.</p>
+                            
+                            <button class="toggle-btn" onclick="toggleDetails('product2')">Show Less</button>
+                        </div>
+                        
+                        <a href="contact.html" class="btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Free-Range Chickens -->
+                <div class="product-detail">
+                    <div class="product-image">
+                        <img src="images/free-range.jpg" alt="Free-Range Chickens">
+                    </div>
+                    <div class="product-info">
+                        <h3>Free-Range Chickens</h3>
+                        <p class="product-price">$12.00 per kg</p>
+                        <p class="product-brief">Naturally raised, organic chickens with superior taste. Raised outdoors with access to natural vegetation and sunshine.</p>
+                        
+                        <div class="product-details-short">
+                            <button class="toggle-btn" onclick="toggleDetails('product3')">Show More Details</button>
+                        </div>
+                        
+                        <div class="product-details-full" id="product3" style="display: none;">
+                            <h4>Full Description</h4>
+                            <p>Our free-range chickens are raised in a natural, stress-free environment where they can roam freely, forage for insects, and enjoy fresh air and sunshine. This traditional farming method produces chickens with superior flavor, firmer texture, and higher nutritional value.</p>
+                            
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Raised outdoors with ample space to roam</li>
+                                <li>Fed organic, non-GMO feed supplemented with natural foraging</li>
+                                <li>No growth hormones or routine antibiotics</li>
+                                <li>Average weight: 1.5 - 2.0 kg per bird</li>
+                                <li>Matured naturally over 10-12 weeks</li>
+                                <li>Rich, authentic chicken flavor</li>
+                            </ul>
+                            
+                            <h4>Health Benefits:</h4>
+                            <p>Free-range chickens have higher omega-3 fatty acids, more vitamin E, and lower fat content compared to conventionally raised chickens. The meat is leaner and more flavorful.</p>
+                            
+                            <h4>Ideal For:</h4>
+                            <p>Health-conscious consumers, premium restaurants, organic food stores, and anyone who appreciates the authentic taste of traditionally raised chicken.</p>
+                            
+                            <h4>Minimum Order:</h4>
+                            <p>5 kg for delivery. Limited availability - please order in advance.</p>
+                            
+                            <button class="toggle-btn" onclick="toggleDetails('product3')">Show Less</button>
+                        </div>
+                        
+                        <a href="contact.html" class="btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Additional Information -->
+            <div class="product-additional-info">
+                <h3>Ordering Information</h3>
+                <p>All prices are subject to change based on market conditions. Bulk discounts available for orders over 100 kg or 50 birds. Free delivery within Harare for orders over $100. For orders outside Harare, delivery charges apply based on distance.</p>
+                <p><strong>Payment Methods:</strong> Cash, EcoCash, Bank Transfer</p>
+                <p><strong>Contact us</strong> for custom orders, special requirements, or any questions about our products.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Poultry Paradise</h3>
+                    <p>Your trusted source for premium quality chickens since 2014</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: info@poultryparadise.com</p>
+                    <p>Phone: +263 123 456 789</p>
+                    <p>Address: 123 Farm Road, Harare, Zimbabwe</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Poultry Paradise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
